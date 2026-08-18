@@ -1,0 +1,22 @@
+:root {
+  --piv: 0.09259259259259259vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: white;
+  user-select: none;
+}
+
+body,
+html {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  background: #0a0b0c;
+}

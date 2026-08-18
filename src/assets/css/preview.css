@@ -1,0 +1,122 @@
+/* Preview-only chrome — not part of the FiveM NUI */
+
+.preview-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.preview-banner__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00cb95;
+  box-shadow: 0 0 8px #00cb95;
+}
+
+.preview-controls {
+  position: fixed;
+  top: 46px;
+  right: 16px;
+  z-index: 10000;
+  display: flex;
+  gap: 6px;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+.preview-controls button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.preview-controls button.is-active,
+.preview-controls button:hover {
+  color: #fff;
+}
+
+.preview-controls button.is-active {
+  background: rgba(0, 203, 149, 0.2);
+  color: #00cb95;
+}
+
+.preview-quicknav {
+  position: fixed;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.preview-quicknav button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.preview-quicknav button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.preview-toast {
+  position: fixed;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background: rgba(0, 203, 149, 0.15);
+  border: 1px solid rgba(0, 203, 149, 0.35);
+  color: #00cb95;
+  font-size: 12px;
+}
+
+.report {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.report__stage-backdrop {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0, 130, 203, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 100%, rgba(255, 46, 217, 0.05) 0%, transparent 50%);
+}
