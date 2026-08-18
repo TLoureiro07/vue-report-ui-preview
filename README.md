@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/be3061cb-bad6-4abc-bb88-2f26e5cec43c
+
 # Vue Report UI - Portfolio Preview
 
 Standalone browser demo of a **Vue.js 2** reporting interface.  
